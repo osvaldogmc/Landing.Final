@@ -1,53 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="./styles/styles.css" rel="stylesheet"/>
-        <title>Landing Page</title>
-        <meta charset="UTF-8"/>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
     <body>
-        <section class="seccion-color">
-            <div>
-                <h1>DETAILING CIDCAR</h1>
-                <h2>Ven y tu auto quedará como nuevo</h2>
-            </div>
-            <img class="style-img-1" src="./assets/img-2.jpg" alt="img-1"/>
-        </section>
-        <section>
-            <div class="card-box">
-                <img src="./assets/img-3.jpg" alt="img-1"/>
-                <h1>Lavado integral</h1>
-                <p>Consta de lavado</p>
-                <p>Aspirado</p>
-                <p>Limpieza interior</p>
-                <p>Renovador de plásticos</p>
-            </div>
-            <div class="card-box">
-                <img src="./assets/img-4.jpg" alt="img-1"/>
-                <h1>Pulidos</h1>
-                <p>Pulido de focos por capa</p>
-                <p>Pulido de carrocería en 2 pasos</p>
-                <p>Para aplicar sellado acrilico y ceramíco</p>
-                <p>Acrilico 1 año y ceramíco 3 años</p>
-            </div>
-            <div class="card-box">
-                <img src="./assets/img-5.jpg" alt="img-1"/>
-                <h1>Sellado ceramico</h1>
-                <p>Aplicación de sellado de 3 años</p>
-                <p>Lavado, descontamición mecanica</p>
-                <p>Pulido en 2 pasos (corte y polishment)</p>
-                <p>Aplicación de producto</p>
-            </div>
-        </section>
-        <section class="seccion-color">
-            <div>
-                <h1>¡No pierdas esta oportunidad!</h1>
-                <h3>Registrate con el link y recibiras un descuento en tu primer servicio</h3>
-            </div>
-            <div class="divisor"></div>
-            <button>
-                Registrate aquí
-            </button>
-        </section>
+        <div class="container">
+            <table>
+                <tbody>
+                    <form id="formulario">
+                        <tr><td>Nombres:</td><td><input type="text" id="nombres"/></td></tr>
+                        <tr><td>Apellidos:</td><td><input type="text" id="apellidos"/></td></tr>
+                        <tr><td>Fecha de nacimiento:</td><td><input type="date" id="fecha" min="1940-01-01" max="2023-06-03"/></td></tr>
+                        <tr><td>Telefono:</td><td><select type="text" id="codigo" size="1"><option value="+569" selected>Chile</option></select><input type="text" id="telefono" size="6"/></td></tr>
+                        <tr><td colspan="2"><button id="btn-submit">Guardar</button></td></tr>
+                    </form>
+                </tbody>
+            </table>
+            <h1>Registros:</h1>
+            <div id="registros"></div>
+        </div>
     </body>
 </html>
+<script lang="text/javascript" src="./formulario/Form.js"></script>
