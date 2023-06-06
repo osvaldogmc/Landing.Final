@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+    <body>
+        <div class="container">
+            <table>
+                <tbody>
+                    <form id="formulario">
+                        <tr><td>Nombres:</td><td><input type="text" id="nombres"/></td></tr>
+                        <tr><td>Apellidos:</td><td><input type="text" id="apellidos"/></td></tr>
+                        <tr><td>Fecha de nacimiento:</td><td><input type="date" id="fecha" min="1940-01-01" max="2023-06-03"/></td></tr>
+                        <tr><td>Telefono:</td><td><select type="text" id="codigo" size="1"><option value="+569" selected>Chile</option></select><input type="text" id="telefono" size="6"/></td></tr>
+                        <tr><td colspan="2"><button id="btn-submit">Guardar</button></td></tr>
+                    </form>
+                </tbody>
+            </table>
+            <h1>Registros:</h1>
+            <div id="registros"></div>
+        </div>
+    </body>
+</html>
+<script lang="text/javascript" src="./formulario/Form.js"></script>
